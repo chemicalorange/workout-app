@@ -1,0 +1,22 @@
+@import '../../../scss/variables';
+
+.wrapper{
+    display: grid;
+    justify-content: space-between;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    > .counter{
+        display: grid;
+        justify-content: center;
+        text-align: center;
+        .title{
+            color: $white;
+            text-transform: capitalize;
+            font-size: 18px;
+        }
+        .number{
+            color: $white;
+        }
+    }
+}

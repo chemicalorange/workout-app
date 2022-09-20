@@ -1,0 +1,27 @@
+@import '../../../scss/variables';
+
+button {
+  font-size: 18px;
+  border-radius: 10px;
+  transition: background-color .15s ease-in-out;
+  border: none;
+  color: $white;
+  width: fit-content;
+  cursor: pointer;
+  &.main {
+    font-size: 24px;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 19px 49px;
+    &:hover{
+        background-color: rgba($accent, .4);
+    }
+  }
+  &.form{
+    background: $blue;
+    padding: 10px 25px;
+    margin-top: 10px;
+    &:hover{
+      background-color: rgba($blue, .4);
+    }
+  }
+}

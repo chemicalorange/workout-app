@@ -1,0 +1,17 @@
+@import '../../../scss/variables.scss';
+
+.wrapper{
+    .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: auto;
+        padding: 30px;
+        .heading{
+            text-transform: uppercase;
+            color: $white;
+            margin-bottom: 20px;
+            margin-top: 10px;
+        }
+    }
+}

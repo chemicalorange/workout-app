@@ -1,0 +1,21 @@
+@import '../../../scss/variables';
+
+.form{
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: auto;
+    width: 100%;
+    max-width: 319px;
+    display: grid;
+    justify-items: center;
+    gap: 10px;
+    .link{
+        text-align: end;
+        width: 100%;
+        color: $blue;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 18px;
+    }
+}
+

@@ -1,0 +1,33 @@
+@import "../../../scss/variables";
+
+.workouts {
+  display: grid;
+  gap: 10px;
+  justify-items: center;
+  margin-bottom: auto;
+  margin-top: 20px;
+  .workout {
+    background: $blue;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    padding-right: 20px;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    position: relative;
+    transition: background-color 0.3s ease;
+    &:hover{
+      background:#130d8b;
+    }
+    .title {
+      color: $white;
+      font-weight: 400;
+      font-size: 16px;
+    }
+    img {
+      width: 20px;
+    }
+  }
+}

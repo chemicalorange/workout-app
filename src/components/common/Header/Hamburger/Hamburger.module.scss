@@ -1,0 +1,71 @@
+@import '../../../../scss/variables';
+
+.wrapper{
+    position: relative;
+    .hamburger{
+        position: relative;
+        width: 27px;
+        height: 22px;
+        background: none;
+        cursor: pointer;
+        &::before, &::after{
+            content: "";
+            position: absolute;
+            width: 27px;
+            height: 2px;
+            background: $white;
+            transition: transform ease 0.3s;
+        }
+        &::before{
+            right: 0;
+            bottom: 0;
+        }
+        &::after{
+            right: 0;
+            bottom: 10px;
+        }
+        div{
+            width: 16px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 2px;
+            background: $white;
+        }
+        &.show{
+            div{
+                visibility: hidden;
+                display: none;
+            }
+            &::before{
+                transform: rotate(-45deg);
+                bottom: 15px;
+            }
+            &::after{
+                transform: rotate(45deg);
+                bottom: 15px;
+            }
+        }
+    }
+    .menu{
+        position: absolute;
+        top: calc(100% + 10px);
+        right: 0;
+        padding: 10px 15px;
+        width: fit-content;
+        min-width: 126px;
+        background: $white;
+        border-radius: 10px 0 10px 10px;
+        ul{
+            display: grid;
+        }
+        li{
+            list-style: none;
+        }
+        a{
+            color: $black;
+            text-decoration: none;
+            font-size: 18px;
+        }
+    }
+}

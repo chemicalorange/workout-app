@@ -1,0 +1,23 @@
+.form{
+  margin: 0 auto;
+  margin-bottom: auto;
+  margin-top: 20px;
+  display: grid;
+  justify-items: center;
+  gap: 10px;
+  width: 100%;
+  max-width: 320px;
+}
+
+.buttons{
+  display: grid;
+  grid-auto-flow: column;
+  gap: 10px;
+  width: 100%;
+  button{
+    width: 100%;
+    &:last-child{
+      background: #1c1877;
+    }
+  }
+}

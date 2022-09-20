@@ -1,0 +1,22 @@
+.alert{
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+  &.success{
+    background: greenyellow;
+  }
+  &.error{
+    background: rgb(138, 0, 0);
+    color: aliceblue;
+  }
+  &.warning{
+    background: orange;
+    color: aliceblue;
+  }
+  &.info{
+    background: #006e8a;
+    color: aliceblue;
+  }
+}

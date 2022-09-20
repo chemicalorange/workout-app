@@ -1,0 +1,24 @@
+@import '../../../scss/variables';
+
+.form{
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: auto;
+    width: 100%;
+    max-width: 319px;
+    display: grid;
+    justify-items: center;
+    gap: 10px;
+    .types{
+        > img{
+            margin: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid transparent;
+            transition: border-bottom 0.3s ease;
+            &.active{
+                border-bottom: 2px solid $light-blue;
+            }
+        }
+    }
+}
+
